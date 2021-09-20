@@ -7,7 +7,11 @@
     <!-- Заголовок страницы в браузере -->
     <title>Методология БЭМ</title>
     <!-- Подключаем CSS -->
+
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nullstyle.css" />
+    <link rel="stylesheet" href="css/main_style.css" />
+
     <!-- Кодировка страницы -->
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
     <meta
@@ -25,12 +29,16 @@
               <img src="/bem/img/header/logo.png" alt="" />
             </a>
             <div class="mainblock__text">
-              <div class="mainblock__title">ЧТО-то там такое от которого вы не откажитесь</div>
+              <div class="mainblock__title">
+                ЧТО-то там такое от которого вы не откажитесь
+              </div>
 
               <div class="mainblock__subtitle">for your app, logo, website</div>
             </div>
             <div class="mainblock__footer">
-              <a href="" class="mainblock__btn btn btn_w">read more</a>
+              <a href="" class="mainblock__btn btn btn_w"
+                ><span> read more</span>
+              </a>
               <a href="" class="mainblock__arow">
                 <img src="/bem/img/header/arrow_down_30.png" alt="" />
               </a>
@@ -43,64 +51,67 @@
       </div>
     </div>
 
-    <div class="menu">
-      <div class="content">
+    <div class="content">
+      <div class="menu">
         <nav class="menu__items">
           <ul class="menu__list">
-            <li><a href="#" class="menu__link">HOMeE</a></li>
-            <li><a href="#" class="menu__link">ABOUT US</a></li>
+            <li><a href="#" class="menu__link menu__link_act">HOME</a></li>
+            <li><a href="#" class="menu__link">О НАС</a></li>
             <li><a href="#" class="menu__link">PORTFOLIO</a></li>
             <li><a href="#" class="menu__link">CONTACTS</a></li>
           </ul>
         </nav>
       </div>
-    </div>
-
-    <div class="about">
-      <div class="about__body">
-        <div class="about__header">
-          <div class="about__title title">ABOUT</div>
-          <div class="about__text">
-            We specialize in codsfntemporary, functional, and stunning websites
-            with design that really brings that "WOW" factor. In our design
-            process, we make sure to stay one step ahead of the latest trends,
-            never forgetting to abide by key web standards.
-          </div>
-        </div>
-        <div class="about__row">
-          <div class="about__column">
-            <div class="item-about">
-              <div class="item-about__icon">
-                <img src="img/about/01.png" alt="" />
-              </div>
-              <div class="item-about__title">WEB</div>
-              <div class="item-about__text">
-                We tend to deliver unique and functional design, through
-                innovation and creativitggggggggssssssssssggggggggggggggggy.
-              </div>
+      <div class="about">
+        <div class="about_contaner">
+          <div class="about__header">
+            <div class="about__top-title top-title">ABOUT</div>
+            <div class="about__top-subtitle">
+              We specialize in contemporary, functional, and stunning websites
+              with design that really brings that "WOW" factor. In our design
+              process, we make sure to stay one step ahead of the latest trends,
+              never forgetting to abide by key web standards.
             </div>
           </div>
-          <div class="about__column">
-            <div class="item-about">
-              <div class="item-about__icon">
-                <img src="img/about/02.png" alt="" />
+          <div class="about__body">
+            <div class="about__row">
+              <div class="about__column">
+                <div class="about__item">
+                  <div class="about__icon">
+                    <img src="/bem/img/about/01.png" alt="" />
+                  </div>
+                  <div class="about__title">WEB</div>
+                  <div class="about__subtitle">
+                    We seek to bring new businesses and customers closer
+                    together through valuable insights and proper targeting.
+                  </div>
+                </div>
               </div>
-              <div class="item-about__title">iOS AND ANDROID</div>
-              <div class="item-about__text">
-                We seek to bring new businesses and customers closer together
-                through vdsdasdsadaluable insights and proper targeting.
+              <div class="about__column">
+                <div class="about__item">
+                  <div class="about__icon">
+                    <img src="/bem/img/about/02.png" alt="" />
+                  </div>
+                  <div class="about__title">iOS AND ANDROID</div>
+                  <div class="about__subtitle">
+                    We seek to bring new businesses and 
+                      c ustomers closer together through valuable 
+                        insights and proper targeting.
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="about__column">
-            <div class="item-about">
-              <div class="item-about__icon">
-                <img src="img/about/03.png" alt="" />
-              </div>
-              <div class="item-about__title">MARKETING</div>
-              <div class="item-about__text">
-                We’ll help you establish the right goals and build the right
-                paths. Success depends on setting the right intention.
+              <div class="about__column">
+                <div class="about__item">
+                  <div class="about__icon">
+                    <img src="/bem/img/about/03.png" alt="" />
+                  </div>
+                  <div class="about__title">MARKETING</div>
+                  <div class="about__subtitle">
+                    We’ll help you establish the right goals 
+                            and build the right paths. Success depends 
+                        on setting the right intention.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -108,8 +119,8 @@
       </div>
     </div>
 
-    <script src="/bem/jquery-3.6.0.min.js"></script>
     <script src="/bem/index-dist.js"></script>
     <script src="/bem/index.js"></script>
+    <script src="/bem/jquery-3.6.0.min.js"></script>
   </body>
 </html>
